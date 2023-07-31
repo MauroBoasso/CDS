@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de Trabajo</h1>
+    <form action="procesar_formulario.php" method="post">
+        <fieldset>
+            <legend>Cliente</legend>
+            <label for="cliente">Cliente:</label>
+            <input type="text" id="cliente" name="cliente" required><br>
+
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br>
+
+            <label for="mail">Mail:</label>
+            <input type="email" id="mail" name="mail" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Trabajo</legend>
+            <label for="posicion">Posición:</label>
+            <input type="text" id="posicion" name="posicion" required><br>
+
+            <label for="tipo_trabajo">Tipo de Trabajo:</label>
+            <input type="text" id="tipo_trabajo" name="tipo_trabajo" required><br>
+
+            <label for="descripcion_falla">Descripción de la Falla:</label><br>
+            <textarea id="descripcion_falla" name="descripcion_falla" rows="4" cols="50" required></textarea><br>
+
+            <label for="tarea_realizada">Tareas Realizadas:</label><br>
+            <textarea id="tarea_realizada" name="tarea_realizada" rows="4" cols="50" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Técnico</legend>
+            <label for="tecnico">Técnico:</label>
+            <input type="text" id="tecnico" name="tecnico" required><br>
+
+            <label for="tiempo_trabajo">Tiempo de Trabajo (horas):</label>
+            <input type="number" id="tiempo_trabajo" name="tiempo_trabajo" required><br>
+
+            <label for="materiales">Materiales Utilizados:</label><br>
+            <textarea id="materiales" name="materiales" rows="4" cols="50" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pago</legend>
+            <label for="importe">Importe:</label>
+            <input type="number" step="0.01" id="importe" name="importe" required><br>
+
+            <label for="metodo_pago">Método de Pago:</label>
+            <input type="text" id="metodo_pago" name="metodo_pago" required><br>
+
+            <label for="fecha_pago">Fecha de Pago:</label>
+            <input type="date" id="fecha_pago" name="fecha_pago" required><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+</body>
+</html>
