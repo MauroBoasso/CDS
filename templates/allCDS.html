@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Listado Comprobantes</title>
+</head>
+<body>
+    <h2>Comprobantes</h2>
+    <div class="container">
+        <h1>Formulario de Comprobantes</h1>
+    </div>
+
+    <div class="container">
+        <h2>Comprobantes</h2>
+        <table>
+            <tr>
+                <th>Nº Comprobante</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Ejemplo 1</td>
+                <td>
+                    <button onclick="editarComprobante('001')">Editar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Ejemplo 2</td>
+                <td>
+                    <button onclick="editarComprobante('002')">Editar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function editarComprobante(numeroComprobante) {
+            alert("Editar comprobante: " + numeroComprobante);
+        }
+    </script>
+</body>
+</html>
